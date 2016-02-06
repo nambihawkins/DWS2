@@ -1,0 +1,150 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    font: 16px / 1.0 Arial, sans-serif;
+    color: #666;
+    background: #f5f5dc;
+}
+#wrapper{
+    border: solid;
+    margin: 2% 0 0 0;
+    background: #fcfff4;
+}
+header{
+    width: auto;
+    height:50%;
+    font-size:3em;
+    text-align:center;
+}
+h1 {
+    font-size:1.9em;
+}
+h2 {
+    font-size:1.7em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left:3.125%;
+}
+.Letter + p {
+    margin-top: 0.001%;
+}
+h3 {
+    font-size: 1.25em;
+    margin: 3% 0 3% 3.125%;
+}
+p {
+    margin: 3% 3.125% 3% 3.125%;
+}
+p[class="Dear"]{
+    font-style: italic ;
+}
+img {
+    width: 65%;
+}
+#Intro{
+    font-size: 1.35em;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+a:link{
+    color: #666;
+}
+a:visited{
+    color: #000;
+}a:hover{
+     color: #deb887;
+ }
+a:active{
+    color: #a52a2a;
+}
+table{
+    border: 1px solid #666;
+    margin: 3% 3.125% 3% 3.125%;
+    width:30%;
+}
+#Dates > h2 {
+    font-size:1.5em;
+    text-decoration: none;
+    text-transform: none;
+}
+td{
+    padding: 1% 1% 1% 1%;
+}
+tr:nth-child(2n){
+    background-color: #f5f5dc;
+}
+/*Media Queries*/
+/*Tablet Portrait size to standard 960 (devices and browsers)*/
+@media screen and (min-width:768px) and (max-width:959px){
+    body{
+        font-size: 0.95em;
+    }
+    h1 {
+        font-size:1.85em;
+    }
+    h2 {
+        font-size: 1.40em;
+    }
+    h3 {
+        font-size: 1.20em;
+    }img{
+        width:55%;
+    }
+    #Intro {
+        font-size: 1.30em;
+    }
+}
+/*Mobile Landscape size to Tablet Portrait (devices and browsers*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+    body{
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size:1.8em;
+    }
+    h2 {
+        font-size: 1.35em;
+    }
+    h3 {
+        font-size: 1.15em;
+    }
+    img{
+        width:45%;
+    }
+    #Intro {
+        font-size: 1.25em;
+    }
+}
+
+/*Mobile Portrait size to Mobile Landscape (devices and browsers*/
+@media only screen and (max-width:479px){
+    img{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    p[class="Dear"]{
+        font-style: normal ;
+    }
+    body{
+        font-size: 0.8em;
+    }
+    h1 {
+        font-size:1.7em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 1.05em;
+    }
+    #Dates {
+        display: none;
+    }
+    #Intro{
+        font-size: 1.15em;
+    }
+}
