@@ -1,0 +1,168 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    font: 16px / 1.0 Arial, sans-serif;
+    color: #ffffff;
+    background: #000000;
+}
+/*Includes the title of the page and navigation*/
+header{
+    width: auto;
+    height:50%;
+    font-size:3em;
+    text-align:center;
+}
+header h1{
+    font-family: 'Abril Fatface', cursive;/*pulling a font from google fonts*/
+    font-size:1.5em;
+}
+a[href^="links"]{
+    text-decoration: none;/*gets rid of all underlines of nav links*/
+
+}
+aside > p{
+    text-align: center; /*only the paragraphs in the aside will be aligned centered*/
+}
+aside {
+    width:30%;
+    border: outset 3px #ffffff;
+    padding: 0.5% 1%;
+    float:left;
+    margin: 3% 0 0 0;
+}
+article p, article a{
+    margin: 0 0 5% 20%;
+}
+article blockquote{
+    margin: 0 0 5% 25%;
+}
+h2 {
+    font-size:0.9em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+h2 + img{
+    margin:0 12%;
+    width:66%;
+    border:none;
+}
+li{
+    font-size:0.4em;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1% 0 1%;
+}
+
+a:link{
+    color: #808080;
+}
+a:visited{
+    color:#a52a2a;
+}a:hover{
+     color:#a9a9a9;
+    text-decoration: underline;
+ }
+a:active{
+    color:#ffffff;
+}
+article{
+    width:60%;
+    float: right;
+    display: inline-block;
+    margin: 0 0 5% 6%;
+}
+img{
+    border: double 5px #ffffff;
+    padding: 2.5%;
+    width: 100%;
+    margin: 5% 0 5% 0;
+}
+footer{
+    clear: both;
+    padding: 0.5% 0 0 0;
+}
+footer li{
+    width: 5%;
+    display: inline-block;
+}
+footer img{
+    border: none;
+}
+
+/*Media Queries*/
+/*Tablet Portrait size to standard 960 (devices and browsers)*/
+@media screen and (min-width:768px) and (max-width:959px) {
+    aside {
+        width:26%;
+        margin: 2% 0 0 8%;
+    }
+    article{
+        width:50%;
+        margin: 0 8% 0 0;
+    }
+    footer{
+        padding: 0.5% 0 0 0;
+        margin: 0 0 0 5%;
+    }
+    li{
+        font-size:0.35em;
+        margin: 0 .5% 0 .5%;
+    }
+}
+/*Mobile Landscape size to Tablet Portrait (devices and browsers*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+    header h1{
+        font-size:1.25em;
+    }
+    aside {
+        float:none;
+        width:60%;
+        margin: 2% 20% 0 20%;
+        border:none;
+        border-bottom: dashed 2px #a52a2a;
+    }
+    article{
+        float: none;
+        width:80%;
+        margin: 0 10%;
+    }
+    footer{
+        padding: 0.5% 0 0 0;
+        margin: 0 0 0 5%;
+    }
+    li{
+        font-size:0.35em;
+        margin: 0 .5% 0 .5%;
+    }
+}
+/*Mobile Portrait size to Mobile Landscape (devices and browsers*/
+@media only screen and (max-width:479px) {
+    header h1{
+        font-size:1em;
+    }
+    h2 + img{/*the profile image will no longer appear*/
+        display: none;
+    }
+    aside {
+        float:none;
+        width:80%;
+        margin: 0 10% 2% 10%;
+        border:none;
+        border-bottom: dashed 2px #a52a2a;
+    }
+    article{
+        float: none;
+        width:70%;
+        margin: 0 15%;
+    }
+    footer{
+        padding: 0.5% 0 0 0;
+        margin: 0 0 0 5%;
+    }
+    li{
+        font-size:0.35em;
+        margin: 0 .5% 0 .5%;
+    }
+
+}
