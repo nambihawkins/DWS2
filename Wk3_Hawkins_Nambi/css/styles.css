@@ -1,0 +1,151 @@
+/*Table of Contents
+----------------------------------------------------
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+---------------------------------------------------- */
+
+
+/*General Content
+---------------------------------------------------- */
+body{background-color:#000;}
+.main{padding-top: 3%;  }
+.row{padding:2% 0}
+.white{
+    background-color:#fff;
+    margin-top: 5%;
+}
+
+/*Typography
+---------------------------------------------------- */
+body{font-family: 'Arial', sans-serif;
+    font-size: 1.35em;
+}
+.three.columns.testimonials{
+    font-family:'Inconsolata', sans-serif;
+    font-size: 1em;
+    color: #888;
+}
+header h1{
+    font-family: 'Pacifico', serif;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    padding:2% 0;
+}
+td h2{
+    font-size: 2em;
+}
+h3{
+    font-family:'Arial', sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    background-color: #fff;
+    padding:1% 0;
+}
+h2{
+    font-family: 'Pacifico', serif;
+    padding: 18% 0 0 0;
+}
+p.quote{
+    font-family: 'Pacifico', serif;
+    font-size: 1.15em;
+    text-align: center;
+    color: #fff;
+}
+/*Header & Navigation
+---------------------------------------------------- */
+header.main_nav{
+    padding:1% 0;
+    color: #888;
+    display: block;
+    text-transform: uppercase;
+}
+.nav li{
+    display: inline-block;
+    padding:1%;
+    border-right: solid 1px #888;
+    text-align: center;
+}
+.nav li.last{
+    border: none;
+}
+ul.nav li a{
+    color: #888;
+    text-decoration: none;
+}
+ul.nav li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+ul.nav li a:active{
+    color:#555;
+    text-decoration: none;
+}
+.nav{
+    text-align:center;
+}
+
+
+/*Images & Media
+---------------------------------------------------- */
+img{max-width:100%;}
+img:hover{opacity:.8;}
+img.avatar{
+    border-radius: 600px;
+    border: 3px solid #000;
+}
+.gallery{
+    margin-bottom: 25%;
+}
+
+/*Footer
+---------------------------------------------------- */
+.contact {
+    color:#fff;
+    text-align: center;
+}
+.interests li{
+    padding-right:2%;
+    text-decoration: none;
+    display:inline-block;
+}
+textarea {
+    width:50%;
+    text-align: left;
+    padding-bottom: 3%;
+    font-size: 1.1em;
+    color:#000;
+}
+
+ul.social{
+    display:block;
+    margin:3% 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.social li{
+    font-size: 1.5em;
+    display: inline;
+    padding: 0 2%;
+}
+ul.social li a{
+    color: #fff;
+}
+
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.google a:hover{color: rgb(211,72,54);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.tumblr a:hover{color: rgb(50,80,109);}
+ul.social li.instagram a:hover{color: rgb(81,127,237);}
+
+p.quote {
+
+}
+
+/*Media Queries
+---------------------------------------------------- */
