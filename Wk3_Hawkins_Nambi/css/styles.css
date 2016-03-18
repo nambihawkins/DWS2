@@ -16,7 +16,7 @@ body{background-color:#000;}
 .row{padding:2% 0}
 .white{
     background-color:#fff;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 /*Typography
@@ -92,7 +92,11 @@ ul.nav li a:active{
 
 /*Images & Media
 ---------------------------------------------------- */
-img{max-width:100%;}
+img{
+    max-width:100%;
+    display: block;
+    margin: auto;
+}
 img:hover{opacity:.8;}
 img.avatar{
     border-radius: 600px;
@@ -149,3 +153,57 @@ p.quote {
 
 /*Media Queries
 ---------------------------------------------------- */
+/*Tablet Portrait size to standard 960 (devices and browsers)*/
+@media screen and (min-width:768px) and (max-width:959px) {
+    header h1{
+        font-size: 3em;
+    }
+}
+/*Mobile Landscape size to Tablet Portrait (devices and browsers*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .nav li{
+        font-size:.85em;
+    }
+    .three.columns.testimonials{
+        font-size: .85em;
+    }
+    td h2{
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: .95em;
+        padding:1% 0;
+    }
+    img.avatar{
+        margin-top:25%;
+
+    }
+}
+/*Mobile Portrait size to Mobile Landscape (devices and browsers*/
+@media only screen and (max-width:479px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .nav li{
+        font-size:.75em;
+    }
+    .three.columns.testimonials{
+        font-size: 1em;
+    }
+    td h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 1em;
+        padding:1% 0;
+    }
+    .featured, .gallery, .artists {
+        margin-bottom:10%;
+    }
+    .bio p{
+        padding-bottom: 5%;
+    }
+}
