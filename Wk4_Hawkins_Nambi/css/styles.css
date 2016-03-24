@@ -1,0 +1,340 @@
+/*Table of Contents
+----------------------------------------------------
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+---------------------------------------------------- */
+
+
+/*General Content
+---------------------------------------------------- */
+body{background-color:#000;}
+.main{padding-top: 3%;  }
+.white{
+    background-color:#fff;
+    margin-top: 15%;
+}
+.white .container {
+    padding: 3% 10% 10%;
+}
+
+/*Typography
+---------------------------------------------------- */
+body{font-family: 'Arial', sans-serif;
+    font-size: 1.35em;
+}
+header h1 {
+    font-family: 'Pacifico', serif;
+    font-size: 3.7em;
+    color: #fff;
+    text-align: center;
+}
+h2.bio{
+    font-family: 'Pacifico', serif;
+    font-size: 2em;
+}
+p.bio{
+    font-size: .75em;
+}
+.contact > .container > h2{
+    font: 2em 'Pacifico', serif;
+}
+p.quote{
+    font-family: 'Pacifico', serif;
+    font-size: 1.15em;
+    text-align: center;
+    color: #fff;
+}
+/*Header & Navigation
+---------------------------------------------------- */
+header.main_nav{
+    padding:1% 0;
+    color: #888;
+    display: block;
+    text-transform: uppercase;
+}
+.nav li{
+    font-family:'Inconsolata', sans-serif;
+    display: inline-block;
+    padding:1%;
+    border-right: solid 1px #888;
+    text-align: center;
+}
+.nav li.last{
+    border: none;
+}
+ul.nav li a{
+    color: #888;
+    text-decoration: none;
+}
+ul.nav li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+ul.nav li a:active{
+    color:#555;
+    text-decoration: none;
+}
+.nav{
+    text-align:center;
+}
+
+/*Images & Media
+---------------------------------------------------- */
+video {
+    display: block;
+    width: 75%;
+    height: 100%;
+    margin: 5% auto auto auto;
+    overflow:hidden;
+    border: hidden;
+    border-radius: 20px;
+}
+li img{
+    max-width:31.5%;
+    margin: auto;
+}
+.row > li{
+    display: inline;
+    width:100%;
+    margin:auto;
+}
+
+img:hover{opacity:.8;}
+img.avatar{
+    border-radius: 600px;
+    border: 3px solid #000;
+    float: left;
+    width: 30%;
+    display: inline-block;
+    margin: auto;
+}
+.bio{
+    clear: both;
+    display: inline-block;
+    width: 55%;
+    padding-left: 10%;
+}
+
+
+/*Footer
+---------------------------------------------------- */
+.contact {
+    clear: both;
+    color:#fff;
+    text-align: center;
+}
+.contact > .container{
+    width:60%;
+    margin: auto;
+}
+
+.interests li{
+    padding-right:2%;
+    text-decoration: none;
+    display:inline-block;
+    margin: auto;
+    text-align: center;
+}
+.interests >.title{
+    display: block;
+}
+textarea {
+    width:65%;
+    text-align: left;
+    padding-bottom: 3%;
+    font-size: 1.1em;
+    color:#000;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+form{
+    font-size: .65em;
+    padding-bottom: 5%;
+}
+form>p>input {
+    color: #000;
+    border-radius: 5px;
+    padding: 1.5% 3% 1% 1.5%;
+    font-size: 1em;
+}
+form>p>input:focus, textarea:focus{
+    outline: none;
+    border-color:red;
+}
+form>p, form>ul{
+    padding-bottom: 3%;
+}
+input[type=submit] {
+    background-color: #000;
+    text-transform: uppercase;
+    border: 1px solid #888;
+    border-radius: 5px;
+    color: #888;
+    padding: 1.5% 5%;
+}
+.title{
+    display:block;
+    padding-bottom: 1%;
+}
+input[type=submit]:hover{
+    color: #696969;
+    border-color: #696969;
+}
+input[type=submit]:active{
+    outline:none;
+    box-shadow: inset 0 0 7px #888;
+}
+ul.social{
+    display:block;
+    margin:3% 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.social li{
+    font-size: .9em;
+    display: inline;
+    padding: 0 2%;
+}
+ul.social li a{
+    color: #fff;
+}
+
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.google a:hover{color: rgb(211,72,54);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.tumblr a:hover{color: rgb(50,80,109);}
+ul.social li.instagram a:hover{color: rgb(81,127,237);}
+
+p.quote {
+    font-size: .75em;
+    padding: 3% 0 2% 0;
+}
+
+/*Media Queries
+---------------------------------------------------- */
+/*Tablet Portrait size to standard 960 (devices and browsers)*/
+@media screen and (min-width:768px) and (max-width:959px) {
+    header h1{
+        font-size: 2.85em;
+    }
+    .nav li{
+        font-size:.95em;
+    }
+    .white.container{
+        padding: 2% 0;
+    }
+    h2.bio{
+        font-family: 'Pacifico', serif;
+        font-size: 1.75em;
+        margin:auto;
+        padding-top:10%;
+    }
+    img.avatar{
+        border-radius: 600px;
+        border: 3px solid #000;
+        width: 25%;
+        margin-top: 10%;
+    }
+    .bio{
+        width: 65%;
+        padding-left: 5%;
+    }
+}
+/*Mobile Landscape size to Tablet Portrait (devices and browsers*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+    header h1 {
+        font-size: 2.35em;
+    }
+    .nav li{
+        font-size:.85em;
+    }
+    li img{
+        max-width:75%;
+    }
+    .row > li{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    img.avatar{
+        margin-top:15%;
+    }
+    .bio p{
+        padding-bottom: 5%;
+    }
+    h2.bio{
+        font-size: 1.9em;
+        margin:auto;
+        padding-top:10%;
+    }
+    img.avatar{
+        border-radius: 600px;
+        border: 3px solid #000;
+        float: none;
+        width: 80%;
+        display: block;
+    }
+    .bio{
+        float: none;
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+/*Mobile Portrait size to Mobile Landscape (devices and browsers*/
+@media only screen and (max-width:479px) {
+    header h1 {
+        font-size: 1.9em;
+    }
+    .nav li{
+        font-size:.75em;
+    }
+    video {
+        width: 85%;
+    }
+    li img{
+        max-width:90%;
+        padding-bottom: 5%;
+    }
+    .last img{
+        padding-bottom: 0;
+    }
+    .row > li{
+        display: block;
+        text-align: center;
+    }
+    .bio p{
+        padding-bottom: 5%;
+    }
+    h2.bio{
+        font-size: 1.5em;
+        margin:auto;
+        padding-top:10%;
+    }
+    img.avatar{
+        border-radius: 600px;
+        border: 3px solid #000;
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .bio{
+        float: none;
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .contact > .container{
+        width:100%;
+    }
+    .contact > .container > h2{
+        font-size:1.5em;
+    }
+}
